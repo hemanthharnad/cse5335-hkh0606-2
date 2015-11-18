@@ -1,6 +1,6 @@
 var redis = require('redis');
-var client = redis.createClient(6929, 'ec2-54-83-59-218.compute-1.amazonaws.com');
-client.auth('p565hbm4d3fqvi8jmqfq9f12vft');
+var client = redis.createClient(10899, 'ec2-54-83-59-218.compute-1.amazonaws.com');
+client.auth('pe7ap32h1dm66n39n9gsv6b9654');
 
 
 client.on('connect', function() {

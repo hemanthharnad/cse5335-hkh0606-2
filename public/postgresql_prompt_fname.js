@@ -4,7 +4,7 @@
 
 
 var pg = require('pg');
-var client = new pg.Client("postgres://fypgzelzcfbyvu:0C6hO0X-QWFc1Jxt_lcUU2vAWJ@ec2-107-21-219-201.compute-1.amazonaws.com:5432/d5ftk80us4s4st?ssl=true");
+var client = new pg.Client("postgres://tgodkpzqzmtiwi:pyEETW2RkUV0IKGGxVj2YU59wN@ec2-54-83-53-120.compute-1.amazonaws.com:5432/ddafd0j8q0aud8?ssl=true");
 client.connect();
 var fs  = require("fs");
 var prompt = require('prompt');
@@ -21,7 +21,7 @@ prompt.get(['fname'] , function (err, result) {
 
 
 
-    var query = client.query("SELECT * FROM employee4 where fname like '" +result.fname+"'", function(err, results){
+    var query = client.query("SELECT * FROM employee where fname like '" +result.fname+"'", function(err, results){
         if (err){
             throw err;
         }
